@@ -1,0 +1,19 @@
+{
+  "name": "ibm-plugin-barcode-sacanner",
+  "version": "0.1.0",
+  "description": "IBM Maximo Anywhere Plugin for barcode scan",
+  "cordova": {
+    "id": "ibm-plugin-barcode-sacanner",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "IBM",
+  "license": "ISC"
+}

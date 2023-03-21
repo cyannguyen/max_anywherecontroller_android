@@ -1,0 +1,3 @@
+dependencies {
+    implementation 'com.google.zxing:core:2.2'
+}

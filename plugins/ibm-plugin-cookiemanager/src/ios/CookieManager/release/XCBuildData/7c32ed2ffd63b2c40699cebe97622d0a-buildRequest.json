@@ -1,0 +1,73 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "3d283b54fbef81ffa1ac726f5050a2f8a0946dbbc5efb648779d18c9ed8ccdea"
+    }
+  ],
+  "containerPath" : "/Users/macadmin/IBM/jenkinsSlaveDir/workspace/maximo/dev/anywhere/Pipeline_Builds/Shared/7640HF/BuildingPlatform/AnywherePlatform/container-deps/anywhere-plugins/plugins/ibm-plugin-cookiemanager/src/ios/CookieManager/CookieManager.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64e",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : true,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos15.2",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "armv4t",
+        "armv5",
+        "armv6",
+        "armv7",
+        "armv7f",
+        "armv7s",
+        "armv7k",
+        "arm64",
+        "arm64e"
+      ],
+      "targetArchitecture" : "arm64e"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData/CookieManager-gtlerctdmhfjgehknbhivefkbxki/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData/CookieManager-gtlerctdmhfjgehknbhivefkbxki/Build/Products",
+      "derivedDataPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData/CookieManager-gtlerctdmhfjgehknbhivefkbxki/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData/CookieManager-gtlerctdmhfjgehknbhivefkbxki/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData/CookieManager-gtlerctdmhfjgehknbhivefkbxki/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "OBJROOT" : "/Users/macadmin/IBM/jenkinsSlaveDir/workspace/maximo/dev/anywhere/Pipeline_Builds/Shared/7640HF/BuildingPlatform/AnywherePlatform/container-deps/anywhere-plugins/plugins/ibm-plugin-cookiemanager/src/ios/CookieManager/release",
+          "ONLY_ACTIVE_ARCH" : "NO",
+          "SDKROOT" : "iphoneos15.2",
+          "SYMROOT" : "/Users/macadmin/IBM/jenkinsSlaveDir/workspace/maximo/dev/anywhere/Pipeline_Builds/Shared/7640HF/BuildingPlatform/AnywherePlatform/container-deps/anywhere-plugins/plugins/ibm-plugin-cookiemanager/src/ios/CookieManager/release"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

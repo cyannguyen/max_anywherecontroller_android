@@ -1,0 +1,23 @@
+buildscript {
+
+    repositories {
+
+        google()
+      jcenter()
+
+    }
+
+    dependencies {
+
+        classpath 'com.android.tools.build:gradle:3.3.0'
+        classpath 'com.google.gms:google-services:4.3.10'
+
+    }
+
+}
+
+configurations {
+  all*.exclude group: 'org.hamcrest', module:'hamcrest-core'
+ }
+
+apply plugin: com.google.gms.googleservices.GoogleServicesPlugin

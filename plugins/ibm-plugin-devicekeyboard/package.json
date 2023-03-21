@@ -1,0 +1,17 @@
+{
+  "name": "ibm-device-keyboard-plugin",
+  "version": "0.1.0",
+  "cordova": {
+    "id": "ibm-device-keyboard-plugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="ibm-plugin-cookiemanager" version="0.2.3">
+    <name>CookieManager</name>
+    <description>Cordova Device Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cookiemanager</keywords>
+    <js-module src="www/CookieManager.js" name="cookiemanager">
+         <clobbers target="cordova.plugins.cookieManager"/>
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CDVCookieManager">
+                <param name="ios-package" value="CookieManager"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CookieManager.h"/>
+        
+    <source-file framework="true" src="src/ios/libCookieManager.a"/>
+</platform>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="CDVCookieManager"><param name="android-package" value="com.ibm.tivoli.si.plugin.CDVCookieManager"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+        </config-file>
+        
+    <lib-file custom="true" type="gradleReference" src="src/android/libs/CookieManager.jar"/>
+</platform>
+</plugin>

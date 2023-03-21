@@ -1,0 +1,68 @@
+{
+  "_from": "git+https://github.com/DisyInformationssysteme/Cordova-spatialite-storage.git",
+  "_id": "cordova-spatialite-storage@0.7.11",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-spatialite-storage",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/DisyInformationssysteme/Cordova-spatialite-storage",
+    "rawSpec": "https://github.com/DisyInformationssysteme/Cordova-spatialite-storage",
+    "saveSpec": "git+https://github.com/DisyInformationssysteme/Cordova-spatialite-storage.git",
+    "fetchSpec": "https://github.com/DisyInformationssysteme/Cordova-spatialite-storage.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/DisyInformationssysteme/Cordova-spatialite-storage.git#06762c59b5bb6d8ee402dea64c942a4d84623cb9",
+  "_spec": "https://github.com/DisyInformationssysteme/Cordova-spatialite-storage",
+  "_where": "/Users/mohanc/Documents/workspace/MaximoAnywhereContainer/output/WorkExecution",
+  "author": {
+    "name": "various"
+  },
+  "bugs": {
+    "url": "https://github.com/DisyInformationssysteme/Cordova-spatialite-storage/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-spatialite-storage",
+    "platforms": [
+      "android",
+      "ios",
+      "windows",
+      "wp8",
+      "wp7",
+      "amazon-fireos"
+    ]
+  },
+  "deprecated": false,
+  "description": "Native interface to SQLite for PhoneGap/Cordova",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.3.0"
+    }
+  ],
+  "homepage": "https://github.com/DisyInformationssysteme/Cordova-spatialite-storage",
+  "keywords": [
+    "sqlite",
+    "spatialite",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-windows",
+    "cordova-wp8",
+    "cordova-wp7",
+    "cordova-amazon-fireos"
+  ],
+  "license": "MIT",
+  "name": "cordova-spatialite-storage",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DisyInformationssysteme/Cordova-spatialite-storage.git"
+  },
+  "version": "0.7.11"
+}

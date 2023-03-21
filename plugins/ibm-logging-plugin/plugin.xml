@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="ibm-logging-plugin" version="0.0.1" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>LoggingPlugin</name>
+    <js-module name="ibm-logging-plugin" src="www/ibm-logging-plugin.js">
+        <clobbers target="cordova.plugins.ibmloggingplugin" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="LoggingPlugin">
+                <param name="android-package" value="com.ibm.graphite.maximomobile.LoggingPlugin" />
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/com/ibm/graphite/maximomobile/LoggingPlugin.java" target-dir="src/com/ibm/graphite/maximomobile" />
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="LoggingPlugin">
+                <param name="ios-package" value="LoggingPlugin" />
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/LoggingPlugin.h"></header-file>
+        <source-file src="src/ios/LoggingPlugin.m" />
+    </platform>
+</plugin>

@@ -1,0 +1,55 @@
+{
+  "_from": "cordova-plugin-cookies",
+  "_id": "cordova-plugin-cookies@0.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-yMS8BLj4JQvpeWp77mw2xw+4qQxr4eOWbLdK337OHg9WvyP7LjSmzMriAKrTgEFiZgI7cDvzrIBHXCcMTtYAhg==",
+  "_location": "/cordova-plugin-cookies",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-cookies",
+    "name": "cordova-plugin-cookies",
+    "escapedName": "cordova-plugin-cookies",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-cookies/-/cordova-plugin-cookies-0.0.2.tgz",
+  "_shasum": "8ab55e8a1abd371d646a0a15b19e02b1e7ad79be",
+  "_spec": "cordova-plugin-cookies",
+  "_where": "/Users/vyshanthasimha/Documents/MaximoAnywhere/MAv764iFix1/MaximoAnywhereContainer/output/WorkExecution",
+  "author": {
+    "name": "Konstantinos Tsanakas"
+  },
+  "bugs": {
+    "url": "https://github.com/ikosta/cordova-plugin-cookies/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-cookies",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Cookies Plugin",
+  "homepage": "https://github.com/ikosta/cordova-plugin-cookies#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-cookies",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikosta/cordova-plugin-cookies.git"
+  },
+  "version": "0.0.2"
+}

@@ -1,0 +1,500 @@
+
+
+
+====================
+PhysicalCount
+====================
+
+  [INFO]  2022-11-23 13:57:18   Initializing App PhysicalCount
+  [INFO]  2022-11-23 13:57:22   Initializing app directory
+  [INFO]  2022-11-23 13:57:28   
+up to date, audited 1 package in 694ms
+
+  [INFO]  2022-11-23 13:57:28   
+found 0 vulnerabilities
+
+  [INFO]  2022-11-23 13:57:28   Prepare entry page
+  [INFO]  2022-11-23 13:57:28   Push enabled: false
+  [INFO]  2022-11-23 13:57:40   Using cordova-fetch for C:\IBM\Anywhere\MaximoAnywhereAppCntr\platforms\android\cordova-android-8.0.0.tar.gz
+  [INFO]  2022-11-23 13:57:40   
+
+  [INFO]  2022-11-23 13:57:55   Adding android project...
+  [INFO]  2022-11-23 13:57:55   
+
+  [INFO]  2022-11-23 13:57:58   Creating Cordova project for the Android platform:
+  [INFO]  2022-11-23 13:57:58   
+	Path: platforms\android
+	Package: com.ibm.maximo.anywhere.physicalcount
+	Name: IBMCount
+	Activity: MainActivity
+	Android target: android-28
+
+  [INFO]  2022-11-23 13:58:0   Subproject Path: CordovaLib
+
+  [INFO]  2022-11-23 13:58:0   Subproject Path: app
+
+  [INFO]  2022-11-23 13:58:0   Android project created with cordova-android@8.0.0
+  [INFO]  2022-11-23 13:58:0   
+
+  [INFO]  2022-11-23 13:58:2   Installing "cordova-background-geolocation-services" for android
+  [INFO]  2022-11-23 13:58:2   
+
+  [INFO]  2022-11-23 13:58:2   Subproject Path: CordovaLib
+  [INFO]  2022-11-23 13:58:2   
+Subproject Path: app
+
+  [INFO]  2022-11-23 13:58:2   Installing "cordova-plugin-advanced-http" for android
+  [INFO]  2022-11-23 13:58:2   
+
+  [INFO]  2022-11-23 13:58:2   Plugin dependency "cordova-plugin-file@6.0.1" already fetched, using that version.
+  [INFO]  2022-11-23 13:58:2   
+
+  [INFO]  2022-11-23 13:58:2   Installing "cordova-plugin-file" for android
+  [INFO]  2022-11-23 13:58:2   
+
+  [INFO]  2022-11-23 13:58:4   --force is used. edit-config will overwrite conflicts if any. Conflicting plugins may not work as expected.
+  [INFO]  2022-11-23 13:58:4   
+
+  [INFO]  2022-11-23 13:58:4   
+The Android Persistent storage location now defaults to "Internal". Please check this plugin's README to see if your application needs any changes in its config.xml.
+
+If this is a new application no changes are required.
+
+If this is an update to an existing application that did not specify an "AndroidPersistentFileLocation" you may need to add:
+
+      "<preference name="AndroidPersistentFileLocation" value="Compatibility" />"
+
+to config.xml in order for the application to find previously stored files.
+        
+  [INFO]  2022-11-23 13:58:4   
+
+  [INFO]  2022-11-23 13:58:4   Installing "cordova-plugin-android-permissions" for android
+  [INFO]  2022-11-23 13:58:4   
+
+  [INFO]  2022-11-23 13:58:4   Installing "cordova-plugin-androidx" for android
+  [INFO]  2022-11-23 13:58:4   
+
+  [INFO]  2022-11-23 13:58:5   Installing "cordova-plugin-androidx-adapter" for android
+  [INFO]  2022-11-23 13:58:5   
+
+  [INFO]  2022-11-23 13:58:6   Installing "cordova-plugin-biometric-keychain" for android
+  [INFO]  2022-11-23 13:58:6   
+
+  [INFO]  2022-11-23 13:58:6   Installing "cordova-plugin-buildinfo" for android
+  [INFO]  2022-11-23 13:58:6   
+
+  [INFO]  2022-11-23 13:58:7   Subproject Path: CordovaLib
+  [INFO]  2022-11-23 13:58:7   
+Subproject Path: app
+
+  [INFO]  2022-11-23 13:58:7   Installing "cordova-plugin-camera" for android
+  [INFO]  2022-11-23 13:58:7   
+
+  [INFO]  2022-11-23 13:58:8   Subproject Path: CordovaLib
+  [INFO]  2022-11-23 13:58:8   
+Subproject Path: app
+
+  [INFO]  2022-11-23 13:58:8   Installing "cordova-plugin-cookies" for android
+  [INFO]  2022-11-23 13:58:8   
+
+  [INFO]  2022-11-23 13:58:8   Installing "cordova-plugin-device" for android
+  [INFO]  2022-11-23 13:58:8   
+
+  [INFO]  2022-11-23 13:58:9   Installing "cordova-plugin-dialogs" for android
+  [INFO]  2022-11-23 13:58:9   
+
+  [INFO]  2022-11-23 13:58:9   Dependent plugin "cordova-plugin-file" already installed on android.
+  [INFO]  2022-11-23 13:58:9   
+
+  [INFO]  2022-11-23 13:58:9   Installing "cordova-plugin-file-opener2" for android
+
+  [INFO]  2022-11-23 13:58:10   Subproject Path: CordovaLib
+  [INFO]  2022-11-23 13:58:10   
+Subproject Path: app
+
+  [INFO]  2022-11-23 13:58:10   Installing "cordova-plugin-file-transfer" for android
+  [INFO]  2022-11-23 13:58:10   
+
+  [INFO]  2022-11-23 13:58:10   Plugin dependency "cordova-plugin-file@6.0.1" already fetched, using that version.
+  [INFO]  2022-11-23 13:58:10   
+
+  [INFO]  2022-11-23 13:58:10   Dependent plugin "cordova-plugin-file" already installed on android.
+  [INFO]  2022-11-23 13:58:10   
+
+  [INFO]  2022-11-23 13:58:10   Installing "cordova-plugin-fingerprint-aio" for android
+  [INFO]  2022-11-23 13:58:10   
+
+  [INFO]  2022-11-23 13:58:11   Subproject Path: CordovaLib
+  [INFO]  2022-11-23 13:58:11   
+Subproject Path: app
+
+  [INFO]  2022-11-23 13:58:11   Installing "cordova-plugin-geolocation" for android
+
+  [INFO]  2022-11-23 13:58:12   Installing "cordova-plugin-globalization" for android
+  [INFO]  2022-11-23 13:58:12   
+
+  [INFO]  2022-11-23 13:58:12   Installing "cordova-plugin-inappbrowser" for android
+  [INFO]  2022-11-23 13:58:12   
+
+  [INFO]  2022-11-23 13:58:13   Installing "cordova-plugin-iroot" for android
+
+  [INFO]  2022-11-23 13:58:13   Subproject Path: CordovaLib
+  [INFO]  2022-11-23 13:58:13   
+Subproject Path: app
+
+  [INFO]  2022-11-23 13:58:13   Installing "cordova-plugin-media-capture" for android
+  [INFO]  2022-11-23 13:58:13   
+
+  [INFO]  2022-11-23 13:58:14   Plugin dependency "cordova-plugin-file@6.0.1" already fetched, using that version.
+  [INFO]  2022-11-23 13:58:14   
+
+  [INFO]  2022-11-23 13:58:14   Dependent plugin "cordova-plugin-file" already installed on android.
+  [INFO]  2022-11-23 13:58:14   
+
+  [INFO]  2022-11-23 13:58:14   Installing "cordova-plugin-mfp" for android
+
+  [INFO]  2022-11-23 13:58:15   Plugin dependency "cordova-plugin-device@2.0.2" already fetched, using that version.
+  [INFO]  2022-11-23 13:58:15   
+
+  [INFO]  2022-11-23 13:58:15   Dependent plugin "cordova-plugin-device" already installed on android.
+  [INFO]  2022-11-23 13:58:15   
+
+  [INFO]  2022-11-23 13:58:15   Plugin dependency "cordova-plugin-dialogs@2.0.2" already fetched, using that version.
+
+  [INFO]  2022-11-23 13:58:15   Dependent plugin "cordova-plugin-dialogs" already installed on android.
+  [INFO]  2022-11-23 13:58:15   
+
+  [INFO]  2022-11-23 13:58:15   Plugin dependency "cordova-plugin-globalization@1.11.0" already fetched, using that version.
+  [INFO]  2022-11-23 13:58:15   
+
+  [INFO]  2022-11-23 13:58:15   Dependent plugin "cordova-plugin-globalization" already installed on android.
+  [INFO]  2022-11-23 13:58:15   
+
+  [INFO]  2022-11-23 13:58:15   Plugin dependency "cordova-plugin-file@6.0.1" already fetched, using that version.
+  [INFO]  2022-11-23 13:58:15   
+
+  [INFO]  2022-11-23 13:58:15   Dependent plugin "cordova-plugin-file" already installed on android.
+  [INFO]  2022-11-23 13:58:15   
+Plugin dependency "cordova-plugin-okhttp@2.0.0" already fetched, using that version.
+
+  [INFO]  2022-11-23 13:58:15   Installing "cordova-plugin-okhttp" for android
+
+  [INFO]  2022-11-23 13:58:15   Subproject Path: CordovaLib
+  [INFO]  2022-11-23 13:58:15   
+Subproject Path: app
+
+  [INFO]  2022-11-23 13:58:18   Subproject Path: CordovaLib
+  [INFO]  2022-11-23 13:58:18   
+Subproject Path: app
+
+  [INFO]  2022-11-23 13:58:18   MainActivity.java was backed up as MainActivity.original. A MobileFirst Platform Foundation version of MainActivity.java was added. If you have made changes in the original MainActivity.java, you need to merge them with the current MainActivity.java in the C:\IBM\Anywhere\MaximoAnywhereAppCntr\output\PhysicalCount\platforms\android\app\src\main\java\com\ibm\maximo\anywhere\physicalcount directory.
+
+  [INFO]  2022-11-23 13:58:18   Installing "cordova-plugin-mfp-jsonstore" for android
+  [INFO]  2022-11-23 13:58:18   
+
+  [INFO]  2022-11-23 13:58:19   Plugin dependency "cordova-plugin-mfp@8.0.2021020111" already fetched, using that version.
+  [INFO]  2022-11-23 13:58:19   
+
+  [INFO]  2022-11-23 13:58:19   Dependent plugin "cordova-plugin-mfp" already installed on android.
+  [INFO]  2022-11-23 13:58:19   
+
+  [INFO]  2022-11-23 13:58:21   Installing "cordova-plugin-native-spinner" for android
+  [INFO]  2022-11-23 13:58:21   
+
+  [INFO]  2022-11-23 13:58:21   Installing "cordova-plugin-network-information" for android
+  [INFO]  2022-11-23 13:58:21   
+
+  [INFO]  2022-11-23 13:58:22   Dependent plugin "cordova-plugin-okhttp" already installed on android.
+  [INFO]  2022-11-23 13:58:22   
+
+  [INFO]  2022-11-23 13:58:22   Installing "cordova-plugin-privacyscreen-fix" for android
+  [INFO]  2022-11-23 13:58:22   
+
+  [INFO]  2022-11-23 13:58:22   Installing "cordova-plugin-wkwebview-engine" for android
+  [INFO]  2022-11-23 13:58:22   
+
+  [INFO]  2022-11-23 13:58:22   Installing "cordova-plugin-wkwebviewxhrfix" for android
+  [INFO]  2022-11-23 13:58:22   
+
+  [INFO]  2022-11-23 13:58:23   Installing "cordova-spatialite-storage" for android
+  [INFO]  2022-11-23 13:58:23   
+
+  [INFO]  2022-11-23 13:58:24   Installing "ibm-accessibility-plugin" for android
+
+  [INFO]  2022-11-23 13:58:24   Installing "ibm-device-orientation-plugin" for android
+
+  [INFO]  2022-11-23 13:58:25   Installing "ibm-display-manager-plugin" for android
+
+  [INFO]  2022-11-23 13:58:25   Installing "ibm-logging-plugin" for android
+
+  [INFO]  2022-11-23 13:58:25   Installing "ibm-map-plugin" for android
+  [INFO]  2022-11-23 13:58:25   
+
+  [INFO]  2022-11-23 13:58:29   Subproject Path: CordovaLib
+  [INFO]  2022-11-23 13:58:29   
+Subproject Path: app
+
+  [INFO]  2022-11-23 13:58:29   Installing "ibm-plugin-barcodescanner" for android
+  [INFO]  2022-11-23 13:58:29   
+
+  [INFO]  2022-11-23 13:58:30   Subproject Path: CordovaLib
+  [INFO]  2022-11-23 13:58:30   
+Subproject Path: app
+
+  [INFO]  2022-11-23 13:58:30   Barcode intent configuring for c:,ibm,anywhere,maximoanywhereappcntr,output,physicalcount
+
+  [INFO]  2022-11-23 13:58:30   Installing "ibm-plugin-cookiemanager" for android
+  [INFO]  2022-11-23 13:58:30   
+
+  [INFO]  2022-11-23 13:58:31   Installing "ibm-plugin-devicekeyboard" for android
+  [INFO]  2022-11-23 13:58:31   
+
+  [INFO]  2022-11-23 13:58:31   Installing "ibm-plugin-email" for android
+  [INFO]  2022-11-23 13:58:31   
+
+  [INFO]  2022-11-23 13:58:32   Installing "ibm-plugin-filepath" for android
+  [INFO]  2022-11-23 13:58:32   
+
+  [INFO]  2022-11-23 13:58:32   Installing "ibm-plugin-permissions" for android
+
+  [INFO]  2022-11-23 13:58:32   Installing "phonegap-plugin-contentsync" for android
+
+  [INFO]  2022-11-23 13:58:34   Plugin 'cordova-plugin-whitelist' found in config.xml... Migrating it to package.json
+  [INFO]  2022-11-23 13:58:34   
+
+  [INFO]  2022-11-23 13:58:34   Discovered plugin "cordova-plugin-whitelist". Adding it to the project
+  [INFO]  2022-11-23 13:58:34   
+
+  [INFO]  2022-11-23 13:58:40   Installing "cordova-plugin-whitelist" for android
+  [INFO]  2022-11-23 13:58:40   
+
+  [INFO]  2022-11-23 13:58:40   Adding cordova-plugin-whitelist to package.json
+  [INFO]  2022-11-23 13:58:40   
+
+  [INFO]  2022-11-23 13:58:43   cordova-plugin-androidx-adapter: EXCEPTION: Failed to load dependencies: Error: Cannot find module 'recursive-readdir'
+Require stack:
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\output\PhysicalCount\plugins\cordova-plugin-androidx-adapter\apply.js
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\node_modules\cordova-lib\src\hooks\HooksRunner.js
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\node_modules\cordova-lib\src\plugman\install.js
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\node_modules\cordova-lib\src\plugman\plugman.js
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\node_modules\cordova-lib\cordova-lib.js
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\node_modules\cordova\src\help.js
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\node_modules\cordova\src\cli.js
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\node_modules\cordova\bin\cordova
+
+  [INFO]  2022-11-23 13:58:43   cordova-plugin-androidx: Updated gradle.properties to enable AndroidX
+
+  [INFO]  2022-11-23 13:58:56   cordova-plugin-androidx-adapter: EXCEPTION: Failed to load dependencies: Error: Cannot find module 'recursive-readdir'
+Require stack:
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\output\PhysicalCount\plugins\cordova-plugin-androidx-adapter\apply.js
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\node_modules\cordova-lib\src\hooks\HooksRunner.js
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\node_modules\cordova-lib\src\plugman\install.js
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\node_modules\cordova-lib\src\plugman\plugman.js
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\node_modules\cordova-lib\cordova-lib.js
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\node_modules\cordova\src\help.js
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\node_modules\cordova\src\cli.js
+- C:\IBM\Anywhere\MaximoAnywhereAppCntr\node_modules\cordova\bin\cordova
+
+  [INFO]  2022-11-23 13:58:56   cordova-plugin-androidx: Updated gradle.properties to enable AndroidX
+
+  [INFO]  2022-11-23 13:58:57   Checking Java JDK and Android SDK versions
+
+  [INFO]  2022-11-23 13:58:57   ANDROID_SDK_ROOT=C:\Users\Administrator\AppData\Local\Android\Sdk (recommended setting)
+ANDROID_HOME=C:\Users\Administrator\AppData\Local\Android\Sdk (DEPRECATED)
+
+  [INFO]  2022-11-23 13:59:1   > Task :wrapper
+  [INFO]  2022-11-23 13:59:1   
+
+BUILD SUCCESSFUL in 3s
+1 actionable task: 1 executed
+
+  [INFO]  2022-11-23 13:59:2   Subproject Path: CordovaLib
+  [INFO]  2022-11-23 13:59:2   
+Subproject Path: app
+
+  [INFO]  2022-11-23 13:59:4   Starting a Gradle Daemon, 7 incompatible Daemons could not be reused, use --status for details
+  [INFO]  2022-11-23 13:59:4   
+
+  [INFO]  2022-11-23 13:59:16   
+
+  [INFO]  2022-11-23 13:59:16   > Configure project :app
+WARNING: Configuration 'compile' is obsolete and has been replaced with 'implementation' and 'api'.
+It will be removed in version 5.0 of the Android Gradle plugin.
+For more information, see http://d.android.com/r/tools/update-dependency-configurations.html.
+
+  [INFO]  2022-11-23 13:59:23   
+
+  [INFO]  2022-11-23 13:59:23   > Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :CordovaLib:preBuild UP-TO-DATE
+> Task :CordovaLib:preDebugBuild
+  [INFO]  2022-11-23 13:59:23    UP-TO-DATE
+> Task :CordovaLib:compileDebugAidl NO-SOURCE
+> Task :app:compileDebugAidl NO-SOURCE
+
+  [INFO]  2022-11-23 13:59:23   > Task :CordovaLib:packageDebugRenderscript NO-SOURCE
+  [INFO]  2022-11-23 13:59:23   
+
+  [INFO]  2022-11-23 13:59:24   > Task :app:compileDebugRenderscript
+  [INFO]  2022-11-23 13:59:24    NO-SOURCE
+> Task :app:generateDebugBuildConfig
+
+  [INFO]  2022-11-23 13:59:24   > Task :app:javaPreCompileDebug
+
+  [INFO]  2022-11-23 13:59:24   > Task :app:generateDebugResValues
+  [INFO]  2022-11-23 13:59:24   
+> Task :app:generateDebugResources
+
+  [INFO]  2022-11-23 13:59:24   > Task :CordovaLib:compileDebugRenderscript
+
+  [INFO]  2022-11-23 13:59:24   > Task :CordovaLib:generateDebugResValues
+  [INFO]  2022-11-23 13:59:24   
+> Task :CordovaLib:generateDebugResources
+
+  [INFO]  2022-11-23 13:59:24   > Task :CordovaLib:packageDebugResources
+  [INFO]  2022-11-23 13:59:24   
+
+  [INFO]  2022-11-23 13:59:31   > Task :app:mergeDebugResources
+  [INFO]  2022-11-23 13:59:31   
+
+  [INFO]  2022-11-23 13:59:32   > Task :app:createDebugCompatibleScreenManifests
+  [INFO]  2022-11-23 13:59:32   
+
+  [INFO]  2022-11-23 13:59:32   > Task :app:extractDeepLinksDebug
+> Task :CordovaLib:extractDeepLinksDebug
+
+  [INFO]  2022-11-23 13:59:32   > Task :CordovaLib:processDebugManifest
+
+  [INFO]  2022-11-23 13:59:33   
+
+  [INFO]  2022-11-23 13:59:33   > Task :app:processDebugManifest
+C:\IBM\Anywhere\MaximoAnywhereAppCntr\output\PhysicalCount\platforms\android\app\src\main\AndroidManifest.xml:5:5-44:19 Warning:
+	application@android:allowBackup was tagged at AndroidManifest.xml:5 to replace other declarations but no other declaration present
+
+> Task :CordovaLib:generateDebugBuildConfig
+> Task :CordovaLib:javaPreCompileDebug
+
+  [INFO]  2022-11-23 13:59:33   > Task :CordovaLib:parseDebugLocalResources
+
+  [INFO]  2022-11-23 13:59:33   > Task :CordovaLib:compileDebugLibraryResources
+
+  [INFO]  2022-11-23 13:59:33   > Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+
+  [INFO]  2022-11-23 13:59:33   > Task :CordovaLib:mergeDebugShaders
+
+  [INFO]  2022-11-23 13:59:33   > Task :CordovaLib:compileDebugShaders NO-SOURCE
+> Task :CordovaLib:generateDebugAssets UP-TO-DATE
+  [INFO]  2022-11-23 13:59:33   
+
+  [INFO]  2022-11-23 13:59:33   > Task :CordovaLib:packageDebugAssets
+
+  [INFO]  2022-11-23 13:59:37   > Task :app:mergeDebugAssets
+
+  [INFO]  2022-11-23 13:59:37   > Task :CordovaLib:generateDebugRFile
+
+  [INFO]  2022-11-23 13:59:40   > Task :app:processDebugResources
+
+  [INFO]  2022-11-23 13:59:44   
+
+  [ERROR]  2022-11-23 13:59:44   Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+  [INFO]  2022-11-23 13:59:44   > Task :CordovaLib:compileDebugJavaWithJavac
+
+  [INFO]  2022-11-23 13:59:44   
+
+  [INFO]  2022-11-23 13:59:44   > Task :CordovaLib:bundleLibCompileToJarDebug
+
+  [INFO]  2022-11-23 13:59:50   
+
+  [ERROR]  2022-11-23 13:59:50   C:\IBM\Anywhere\MaximoAnywhereAppCntr\output\PhysicalCount\platforms\android\app\src\main\java\com\cordova\plugin\android\fingerprintauth\FingerprintAuth.java:330: warning: unreachable catch clause
+        } catch (UnrecoverableEntryException e) {
+          ^
+  thrown type UnrecoverableKeyException has already been caught
+
+  [INFO]  2022-11-23 13:59:50   > Task :app:compileDebugJavaWithJavac
+
+  [ERROR]  2022-11-23 13:59:52   Note: Some input files use or override a deprecated API.
+  [ERROR]  2022-11-23 13:59:52   
+
+  [ERROR]  2022-11-23 13:59:52   Note: Recompile with -Xlint:deprecation for details.
+  [ERROR]  2022-11-23 13:59:52   
+
+  [ERROR]  2022-11-23 13:59:52   Note: Some input files use unchecked or unsafe operations.
+  [ERROR]  2022-11-23 13:59:52   
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+  [ERROR]  2022-11-23 13:59:52   
+
+  [INFO]  2022-11-23 13:59:53   
+
+  [INFO]  2022-11-23 13:59:53   > Task :app:compileDebugSources
+
+  [INFO]  2022-11-23 13:59:53   > Task :app:processDebugJavaRes
+  [INFO]  2022-11-23 13:59:53    NO-SOURCE
+> Task :CordovaLib:processDebugJavaRes NO-SOURCE
+
+  [INFO]  2022-11-23 13:59:53   > Task :CordovaLib:bundleLibResDebug
+  [INFO]  2022-11-23 13:59:53    NO-SOURCE
+
+  [INFO]  2022-11-23 13:59:55   > Task :app:mergeDebugJavaResource
+
+  [INFO]  2022-11-23 13:59:56   > Task :app:checkDebugDuplicateClasses
+
+  [INFO]  2022-11-23 13:59:56   > Task :CordovaLib:bundleLibRuntimeToJarDebug
+
+  [INFO]  2022-11-23 14:0:5   > Task :app:dexBuilderDebug
+
+  [INFO]  2022-11-23 14:0:16   > Task :app:multiDexListDebug
+  [INFO]  2022-11-23 14:0:16   
+
+  [INFO]  2022-11-23 14:0:30   > Task :app:mergeDebugJniLibFolders
+  [INFO]  2022-11-23 14:0:30   
+> Task :CordovaLib:mergeDebugJniLibFolders
+
+  [INFO]  2022-11-23 14:0:30   > Task :app:desugarDebugFileDependencies
+  [INFO]  2022-11-23 14:0:30   
+> Task :CordovaLib:mergeDebugNativeLibs
+> Task :CordovaLib:stripDebugDebugSymbols NO-SOURCE
+> Task :CordovaLib:copyDebugJniLibsProjectOnly
+
+  [INFO]  2022-11-23 14:0:31   > Task :app:validateSigningDebug
+  [INFO]  2022-11-23 14:0:31   
+
+  [INFO]  2022-11-23 14:0:34   > Task :app:mergeDebugNativeLibs
+  [INFO]  2022-11-23 14:0:34   
+
+  [INFO]  2022-11-23 14:0:36   
+
+  [INFO]  2022-11-23 14:0:36   > Task :app:stripDebugDebugSymbols
+WARNING: Compatible side by side NDK version was not found. Default is 21.0.6113669.
+Compatible side by side NDK version was not found. Default is 21.0.6113669.
+Unable to strip the following libraries, packaging them as they are: libauthjni.so, libcrypto.so, libjsqlite.so, libopenssl_fips.so, libruntimecore_java.so, libsqlcipher.so, libtool-checker.so.
+
+  [INFO]  2022-11-23 14:0:36   
+
+  [INFO]  2022-11-23 14:0:36   > Task :app:mergeDexDebug
+
+  [INFO]  2022-11-23 14:0:42   > Task :app:packageDebug
+
+  [INFO]  2022-11-23 14:0:42   > Task :app:assembleDebug
+> Task :app:cdvBuildDebug
+
+  [INFO]  2022-11-23 14:0:42   
+
+  [INFO]  2022-11-23 14:0:42   Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5/userguide/command_line_interface.html#sec:command_line_warnings
+
+
+  [INFO]  2022-11-23 14:0:42   BUILD SUCCESSFUL in 1m 40s
+40 actionable tasks: 40 executed
+
+  [INFO]  2022-11-23 14:0:43   Built the following apk(s): 
+	C:\IBM\Anywhere\MaximoAnywhereAppCntr\output\PhysicalCount\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+  [INFO]  2022-11-23 14:0:43   
+
+  [INFO]  2022-11-23 14:0:45   Android app for PhysicalCount built successfully 
+  [INFO]  2022-11-23 14:0:45   Built PhysicalCount to: C:\IBM\Anywhere\MaximoAnywhereAppCntr\bin\android

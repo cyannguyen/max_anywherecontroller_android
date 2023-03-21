@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="ibm-plugin-devicekeyboard" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>KeyboardPlugin</name>
+    <js-module name="DeviceKeyBoardPlugin" src="www/DeviceKeyBoard.js">
+        <clobbers target="cordova.plugins.DeviceKeyBoard"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="DeviceKeyBoardPlugin">
+                <param name="android-package" value="com.ibm.tivoli.si.plugin.DeviceKeyBoardPlugin"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+        </config-file>
+        
+    <lib-file custom="true" type="gradleReference" src="src/android/libs/KeyboardPlugin.jar"/>
+</platform>
+     <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Keyboard">
+                <param name="ios-package" onload="true" value="KeyboardPlugin"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/KeyboardPlugin.h"/>
+        
+     <source-file framework="true" src="src/ios/libKeyboardPlugin.a"/>
+</platform>
+</plugin>

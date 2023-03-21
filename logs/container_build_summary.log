@@ -1,0 +1,56 @@
+
+
+
+====================
+summary
+====================
+
+  [INFO]  2022-11-23 13:56:46   Loading Container.properties
+  [INFO]  2022-11-23 13:56:46   Validating Container properties
+  [INFO]  2022-11-23 13:56:46   Apps To Build: PhysicalCount
+  [INFO]  2022-11-23 13:56:46   Platforms To Build: android
+  [INFO]  2022-11-23 13:56:46   Anywhere Base Directory: C:/IBM/Anywhere/MaximoAnywhere
+  [INFO]  2022-11-23 13:56:46   Web Content Included : false
+  [INFO]  2022-11-23 13:56:46   Processing Android Properties
+  [INFO]  2022-11-23 13:56:46   Java Home: C:/Java/jdk-11.0.16.1
+  [INFO]  2022-11-23 13:56:46   Android Home: C:/Users/Administrator/AppData/Local/Android/Sdk
+  [INFO]  2022-11-23 13:56:46   Attempting to download gradle
+  [INFO]  2022-11-23 13:56:48   Starting a Gradle Daemon, 6 incompatible Daemons could not be reused, use --status for details
+  [INFO]  2022-11-23 13:56:48   
+
+  [INFO]  2022-11-23 13:56:54   > Task :wrapper
+  [INFO]  2022-11-23 13:56:54    UP-TO-DATE
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 7s
+1 actionable task: 1 up-to-date
+
+  [INFO]  2022-11-23 13:56:54   Setting Gradle Path to : file:///C:/Users/Administrator/.gradle/wrapper/dists/gradle-6.5-bin/6nifqtx7604sqp1q6g8wikw7p/gradle-6.5-bin.zip
+  [INFO]  2022-11-23 13:56:54   Loading Build properties
+  [INFO]  2022-11-23 13:56:54   Default Maximo server will be set to: http://192.168.18.171:9080/maximo
+  [INFO]  2022-11-23 13:56:54   Installing Container Dependencies: Plugins
+  [INFO]  2022-11-23 13:57:18   Extracted 4224 entries
+  [INFO]  2022-11-23 13:57:18   Initiating app discovery
+  [INFO]  2022-11-23 13:57:18   Valid app found in: C:\IBM\Anywhere\MaximoAnywhere\apps\PhysicalCount
+  [INFO]  2022-11-23 13:57:18   Loading app-descriptor.xml
+  [INFO]  2022-11-23 13:57:18   Proceeding to build following apps: PhysicalCount
+
+
+
+========================================
+Summary for PhysicalCount build
+========================================
+
+  [INFO]  2022-11-23 13:57:18   [PhysicalCount::android]  Initializing App PhysicalCount for platform android--
+  [INFO]  2022-11-23 13:57:18   [PhysicalCount::android]  Generating MD5 checksum file:appdownload.js:a31ac809dfab135a132f36710d2a1e15
+  [INFO]  2022-11-23 13:58:47   [PhysicalCount::android]  Completed App Initialization: PhysicalCount
+  [INFO]  2022-11-23 13:58:47   [PhysicalCount::android]  Building App for: PhysicalCount
+  [INFO]  2022-11-23 14:0:45   [PhysicalCount::android]  Android app for PhysicalCount built successfully 
+  [INFO]  2022-11-23 14:0:45   [PhysicalCount::android]  Built PhysicalCount to: C:\IBM\Anywhere\MaximoAnywhereAppCntr\bin\android
+  [INFO]  2022-11-23 14:0:45   [PhysicalCount::android]  Completed App Build for PhysicalCount for platform android
+
+
+  [INFO]  2022-11-23 14:0:45   Container build finished

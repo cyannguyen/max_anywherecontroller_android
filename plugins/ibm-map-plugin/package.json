@@ -1,0 +1,19 @@
+{
+  "name": "ibm-map-pluigin",
+  "version": "0.1.0",
+  "description": "",
+  "cordova": {
+    "id": "ibm-map-pluigin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "IBM",
+  "license": "ISC"
+}

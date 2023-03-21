@@ -1,0 +1,17 @@
+{
+  "name": "ibm-permissions-plugin",
+  "version": "0.1.0",
+  "description": "",
+  "cordova": {
+    "id": "ibm-permissions-plugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "IBM",
+  "license": "ISC"
+}

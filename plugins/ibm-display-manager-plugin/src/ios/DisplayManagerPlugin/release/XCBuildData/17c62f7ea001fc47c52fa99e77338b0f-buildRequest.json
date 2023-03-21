@@ -1,0 +1,73 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "be65a7992650bd0d16defef6d8f4addcb8ad1d9f40a8bf09a8ab2a54b3a94c89"
+    }
+  ],
+  "containerPath" : "/Users/macadmin/IBM/jenkinsSlaveDir/workspace/maximo/dev/anywhere/Pipeline_Builds/Shared/7640HF/BuildingPlatform/AnywherePlatform/container-deps/anywhere-plugins/plugins/ibm-display-manager-plugin/src/ios/DisplayManagerPlugin/DisplayManagerPlugin.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64e",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : true,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos15.2",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "armv4t",
+        "armv5",
+        "armv6",
+        "armv7",
+        "armv7f",
+        "armv7s",
+        "armv7k",
+        "arm64",
+        "arm64e"
+      ],
+      "targetArchitecture" : "arm64e"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData/DisplayManagerPlugin-burmflcztmiznudtmixxqwiszhrg/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData/DisplayManagerPlugin-burmflcztmiznudtmixxqwiszhrg/Build/Products",
+      "derivedDataPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData/DisplayManagerPlugin-burmflcztmiznudtmixxqwiszhrg/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData/DisplayManagerPlugin-burmflcztmiznudtmixxqwiszhrg/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData/DisplayManagerPlugin-burmflcztmiznudtmixxqwiszhrg/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "OBJROOT" : "/Users/macadmin/IBM/jenkinsSlaveDir/workspace/maximo/dev/anywhere/Pipeline_Builds/Shared/7640HF/BuildingPlatform/AnywherePlatform/container-deps/anywhere-plugins/plugins/ibm-display-manager-plugin/src/ios/DisplayManagerPlugin/release",
+          "ONLY_ACTIVE_ARCH" : "NO",
+          "SDKROOT" : "iphoneos15.2",
+          "SYMROOT" : "/Users/macadmin/IBM/jenkinsSlaveDir/workspace/maximo/dev/anywhere/Pipeline_Builds/Shared/7640HF/BuildingPlatform/AnywherePlatform/container-deps/anywhere-plugins/plugins/ibm-display-manager-plugin/src/ios/DisplayManagerPlugin/release"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

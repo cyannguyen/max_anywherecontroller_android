@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="ibm-display-manager-plugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>DisplayManagerPlugin</name>
+    <js-module name="ibm-display-manager-plugin" src="www/ibm-display-manager-plugin.js">
+        <clobbers target="cordova.plugins.ibm-display-manager-plugin"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="DisplayManagerPlugin">
+                <param name="android-package" value="com.ibm.tivoli.si.plugin.DisplayManagerPlugin"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"/>
+        
+    <lib-file custom="true" type="gradleReference" src="src/android/libs/DisplayManagerPlugin.jar"/>
+</platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="DisplayManagerPlugin">
+                <param name="ios-package" value="DisplayManagerPlugin"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/DisplayManagerPlugin.h"/>
+        
+    <source-file framework="true" src="src/ios/libDisplayManagerPlugin.a"/>
+</platform>
+</plugin>

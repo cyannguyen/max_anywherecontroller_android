@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="ibm-map-plugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>MapPlugin</name>
+    <js-module name="MapPlugin" src="www/ibm-map-plugin.js">
+        <clobbers target="cordova.plugin.ibm-map-pluigin"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="MapPlugin">
+                <param name="android-package" value="com.ibm.tivoli.si.plugin.MapPlugin"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"/>
+        <framework src="build-extras.gradle" custom="true" type="gradleReference"/>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <lib-file src="src/android/libs/arcgis-android-api.jar"/>
+        <lib-file src="src/android/libs/apache-mime4j-0.6.jar"/>
+        <lib-file src="src/android/libs/commons-codec.jar"/>
+        <lib-file src="src/android/libs/commons-logging-1.2.jar"/>
+        <lib-file src="src/android/libs/httpclient-4.0.jar"/>
+        <lib-file src="src/android/libs/httpcore-4.0.1.jar"/>
+        <lib-file src="src/android/libs/httpmime-4.0.jar"/>
+
+        <resource-file src="src/android/libs/armeabi/libruntimecore_java.so" target="jniLibs/armeabi/libruntimecore_java.so"/>
+        <resource-file src="src/android/libs/armeabi-v7a/libruntimecore_java.so" target="jniLibs/armeabi-v7a/libruntimecore_java.so"/>
+        <resource-file src="src/android/libs/x86/libruntimecore_java.so" target="jniLibs/x86/libruntimecore_java.so"/>
+
+        <source-file src="src/android/res/drawable/big_blue_marker.png" target-dir="res/drawable"/>
+        <source-file src="src/android/res/drawable/blue_marker.png" target-dir="res/drawable"/>
+        <source-file src="src/android/res/drawable/gps.png" target-dir="res/drawable"/>
+
+        <source-file src="src/android/res/drawable-hdpi/map_current_location.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/res/drawable-hdpi/map_wo_default_selected.png" target-dir="res/drawable-hdpi"/>
+        <source-file src="src/android/res/drawable-hdpi/map_wo_default.png" target-dir="res/drawable-hdpi"/>
+
+        <source-file src="src/android/res/drawable-mdpi/map_current_location.png" target-dir="res/drawable-mdpi"/>
+        <source-file src="src/android/res/drawable-mdpi/map_wo_default_selected.png" target-dir="res/drawable-mdpi"/>
+        <source-file src="src/android/res/drawable-mdpi/map_wo_default.png" target-dir="res/drawable-mdpi"/>
+
+        <source-file src="src/android/res/drawable-xhdpi/map_current_location.png" target-dir="res/drawable-xhdpi"/>
+        <source-file src="src/android/res/drawable-xhdpi/map_wo_default_selected.png" target-dir="res/drawable-xhdpi"/>
+        <source-file src="src/android/res/drawable-xhdpi/map_wo_default.png" target-dir="res/drawable-xhdpi"/>
+
+
+    <lib-file custom="true" type="gradleReference" src="src/android/libs/MapPlugin.jar"/>
+</platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="MapPlugin">
+                <param name="ios-package" value="ISIMapPlugin"/>
+            </feature>
+        </config-file>
+        <framework src="src/ios/Frameworks/ArcGIS.framework" custom="true"/>
+
+        <config-file target="*-Info.plist" parent="UIFileSharingEnabled">
+            <true/>
+        </config-file>
+        
+        <resource-file src="src/ios/MapImages.bundle"/>
+
+        <header-file src="src/ios/Map/ISIAbstractMap.h"/>
+         <header-file src="src/ios/Map/ISIDirections.h"/>
+         <header-file src="src/ios/Map/ISIDirectionsLeg.h"/>
+         <header-file src="src/ios/Map/ISIDirectionsParser.h"/>
+         <header-file src="src/ios/Map/ISIDirectionsStep.h"/>
+         <header-file src="src/ios/Map/ISIEsriMap.h"/>
+         <header-file src="src/ios/Map/ISIEsriMapEventDispatcher.h"/>
+         <header-file src="src/ios/Map/ISIEsriPromiseRouteDelegator.h"/>
+         <header-file src="src/ios/Map/ISIEsriRoutingService.h"/>
+         <header-file src="src/ios/Map/ISIEsriWorkOfflineDirections.h"/>
+         <header-file src="src/ios/Map/ISIJSEvent.h"/>
+         <header-file src="src/ios/Map/ISIJSEventDispatcher.h"/>
+         <header-file src="src/ios/Map/ISIJsonUtils.h"/>
+         <header-file src="src/ios/Map/ISIJSStatusChangedEvent.h"/>
+         <header-file src="src/ios/Map/ISIKeyValue.h"/>
+         <header-file src="src/ios/Map/ISILayerInfo.h"/>
+         <header-file src="src/ios/Map/ISILocalizedResource.h"/>
+         <header-file src="src/ios/Map/ISILogger.h"/>
+         <header-file src="src/ios/Map/ISIMapPlugin.h"/>
+         <header-file src="src/ios/Map/ISIMapProperties.h"/>
+         <header-file src="src/ios/Map/ISIMapUIManager.h"/>
+         <header-file src="src/ios/Map/ISIMapUIManagerRegistry.h"/>
+         <header-file src="src/ios/Map/ISIMarkerAnchor.h"/>
+         <header-file src="src/ios/Map/ISIMarkerInfo.h"/>
+         <header-file src="src/ios/Map/ISIMarkerModel.h"/>
+         <header-file src="src/ios/Map/ISIMessage.h"/>
+         <header-file src="src/ios/Map/ISINativeException.h"/>
+         <header-file src="src/ios/Map/ISIPosition.h"/>
+         <header-file src="src/ios/Map/ISIPositionSorter.h"/>
+         <header-file src="src/ios/Map/ISIPromise.h"/>
+         <header-file src="src/ios/Map/ISIRectD.h"/>
+         <header-file src="src/ios/Map/ISIResourceLocationExtractor.h"/>
+         <header-file src="src/ios/Map/ISIWorkOfflineDirections.h"/>
+         <header-file src="src/ios/Map/ISIWorkOfflinePlugin.h"/>
+         <header-file src="src/ios/MapPlugin/MapPlugin/ISIAdjustView.h"/>
+         <header-file src="src/ios/dictionary/NSArray+Comparisons.h"/>
+         <header-file src="src/ios/dictionary/NSData+Base64.h"/>
+         <header-file src="src/ios/dictionary/NSDictionary+Extensions.h"/>
+
+         <!-- <source-file src="src/ios/Map/ISIAbstractMap.m" />
+         <source-file src="src/ios/Map/ISIDirections.m" />
+         <source-file src="src/ios/Map/ISIDirectionsLeg.m" />
+         <source-file src="src/ios/Map/ISIDirectionsParser.m" />
+         <source-file src="src/ios/Map/ISIDirectionsStep.m" />
+         <source-file src="src/ios/Map/ISIEsriMap.m" />
+         <source-file src="src/ios/Map/ISIEsriMapEventDispatcher.m" />
+         <source-file src="src/ios/Map/ISIEsriPromiseRouteDelegator.m" />
+         <source-file src="src/ios/Map/ISIEsriRoutingService.m" />
+         <source-file src="src/ios/Map/ISIEsriWorkOfflineDirections.m" />
+         <source-file src="src/ios/Map/ISIJSEvent.m" />
+         <source-file src="src/ios/Map/ISIJSEventDispatcher.m" />
+         <source-file src="src/ios/Map/ISIJsonUtils.m" />
+         <source-file src="src/ios/Map/ISIJSStatusChangedEvent.m" />
+         <source-file src="src/ios/Map/ISIKeyValue.m" />
+         <source-file src="src/ios/Map/ISILayerInfo.m" />
+         <source-file src="src/ios/Map/ISILocalizedResource.m" />
+         <source-file src="src/ios/Map/ISIMapPlugin.m" />
+         <source-file src="src/ios/Map/ISIMapProperties.m" />
+         <source-file src="src/ios/Map/ISIMapUIManager.m" />
+         <source-file src="src/ios/Map/ISIMapUIManagerRegistry.m" />
+         <source-file src="src/ios/Map/ISIMarkerAnchor.m" />
+         <source-file src="src/ios/Map/ISIMarkerInfo.m" />
+         <source-file src="src/ios/Map/ISIMarkerModel.m" />
+         <source-file src="src/ios/Map/ISIMessage.m" />
+         <source-file src="src/ios/Map/ISINativeException.m" />
+         <source-file src="src/ios/Map/ISIPosition.m" />
+         <source-file src="src/ios/Map/ISIPositionSorter.m" />
+         <source-file src="src/ios/Map/ISIPromise.m" />
+         <source-file src="src/ios/Map/ISIRectD.m" />
+         <source-file src="src/ios/Map/ISIResourceLocationExtractor.m" />
+         <source-file src="src/ios/Map/ISIWorkOfflineDirections.m" />
+         <source-file src="src/ios/Map/ISIWorkOfflinePlugin.m" />
+         <source-file src="src/ios/MapPlugin/MapPlugin/ISIAdjustView.m" />
+         <source-file src="src/ios/dictionary/NSArray+Comparisons.m" />
+         <source-file src="src/ios/dictionary/NSData+Base64.m" />
+         <source-file src="src/ios/dictionary/NSDictionary+Extensions.m" /> -->
+         
+        
+    <source-file framework="true" src="src/ios/libMapPlugin.a"/>
+</platform>
+</plugin>

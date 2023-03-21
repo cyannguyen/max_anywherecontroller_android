@@ -1,0 +1,19 @@
+{
+  "name": "ibm-email-plugin",
+  "version": "0.0.1",
+  "description": "Send aplication logs thru email.",
+  "cordova": {
+    "id": "ibm-email-plugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "IBM",
+  "license": "ISC"
+}

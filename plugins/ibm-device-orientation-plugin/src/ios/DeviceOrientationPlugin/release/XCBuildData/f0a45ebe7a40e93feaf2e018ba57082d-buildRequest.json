@@ -1,0 +1,73 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "d16833a01feb26cea3753a53362989fc06338f3d8dbd7542f0f0ba2343cf20fd"
+    }
+  ],
+  "containerPath" : "/Users/macadmin/IBM/jenkinsSlaveDir/workspace/maximo/dev/anywhere/Pipeline_Builds/Shared/7640HF/BuildingPlatform/AnywherePlatform/container-deps/anywhere-plugins/plugins/ibm-device-orientation-plugin/src/ios/DeviceOrientationPlugin/DeviceOrientationPlugin.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64e",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : true,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos15.2",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "armv4t",
+        "armv5",
+        "armv6",
+        "armv7",
+        "armv7f",
+        "armv7s",
+        "armv7k",
+        "arm64",
+        "arm64e"
+      ],
+      "targetArchitecture" : "arm64e"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData/DeviceOrientationPlugin-ejxsuthglroizofkihartqrzdjly/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData/DeviceOrientationPlugin-ejxsuthglroizofkihartqrzdjly/Build/Products",
+      "derivedDataPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData/DeviceOrientationPlugin-ejxsuthglroizofkihartqrzdjly/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData/DeviceOrientationPlugin-ejxsuthglroizofkihartqrzdjly/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/macadmin/Library/Developer/Xcode/DerivedData/DeviceOrientationPlugin-ejxsuthglroizofkihartqrzdjly/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "OBJROOT" : "/Users/macadmin/IBM/jenkinsSlaveDir/workspace/maximo/dev/anywhere/Pipeline_Builds/Shared/7640HF/BuildingPlatform/AnywherePlatform/container-deps/anywhere-plugins/plugins/ibm-device-orientation-plugin/src/ios/DeviceOrientationPlugin/release",
+          "ONLY_ACTIVE_ARCH" : "NO",
+          "SDKROOT" : "iphoneos15.2",
+          "SYMROOT" : "/Users/macadmin/IBM/jenkinsSlaveDir/workspace/maximo/dev/anywhere/Pipeline_Builds/Shared/7640HF/BuildingPlatform/AnywherePlatform/container-deps/anywhere-plugins/plugins/ibm-device-orientation-plugin/src/ios/DeviceOrientationPlugin/release"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

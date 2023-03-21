@@ -1,0 +1,183 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+xmlns:android="http://schemas.android.com/apk/res/android"
+           id="cordova-plugin-maximo-pushnotification"
+      version="1.0.0">
+
+    <name>MaximoPushNotification</name>
+    <description>Cordova plugin for Maximo Pushnotification.</description>
+    <license></license>
+    <keywords>cordova</keywords>
+    <repo>https://github.ibm.com/sbudhira/cordova-plugin-maximo-pushnotification</repo>
+    <issue></issue>
+
+
+    <engines>
+        <engine name="cordova" version=">=9.0.0"/>
+        <engine name="cordova-android" version=">=8.0.0"/>
+        <engine name="cordova-ios" version=">=5.0.0"/>
+    </engines>
+ 
+
+    <asset src="www/pushnotification.js" target="js/pushnotification.js"/>
+	  
+    <js-module src="www/pushnotification.js" name="pushnotification">
+	    <clobbers target="pushnotification" />
+    </js-module>
+
+  
+   <platform name="android">
+		
+        <preference name="FIREBASE_CORE_VERSION" default="16.0.3"/>
+        <preference name="FIREBASE_MESSAGING_VERSION" default="17.6.0"/>
+        
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="PushNotification">
+                <param name="android-package" value="com.ibm.maximo.pushnotification.PushNotification" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+	        <permission android:name="com.ibm.maximo.pushnotification.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	        <uses-permission android:name="android.permission.INTERNET" />
+	        <uses-permission android:name="android.permission.WAKE_LOCK" />
+	        <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	        <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+	        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	        <uses-permission android:name="android.permission.bind_job_service permission" />
+			<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />			
+	    </config-file>
+		
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">	
+            <service android:name="com.ibm.maximo.pushnotification.MyFirebaseMessagingService">
+                <intent-filter>
+                    <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                </intent-filter>
+            </service>
+			<meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_launcher" />
+        </config-file>
+	
+		<resource-file src="src/android/res/drawable/ic_launcher.png" target="res/drawable/ic_launcher.png" />
+		 
+        <framework src="com.google.firebase:firebase-core:$FIREBASE_CORE_VERSION" />
+        <framework src="com.google.firebase:firebase-messaging:$FIREBASE_MESSAGING_VERSION" />
+        
+	    <framework src="com.googlecode.json-simple:json-simple:1.1.1" />
+	
+        <preference name="ANDROID_SUPPORT_V4_VERSION" default="27.+"/>
+        <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_V4_VERSION"/>
+
+        <framework src="com.ibm.mobilefirstplatform.clientsdk.android:push:3.+"/>
+        
+	    <framework src="build-extras.gradle" custom="true" type="gradleReference" />
+		
+	    <lib-file src="src/android/libs/cordova-plugin-maximo-pushnotification.jar" /> 
+		
+     <!--   <source-file src="src/android/PushNotification.java"
+            target-dir="src/com/ibm/maximo/pushnotification" />                  
+        <source-file src="src/android/IMaximoPushListener.java"
+             target-dir="src/com/ibm/maximo/pushnotification" />
+		<source-file src="src/android/IMaximoPushMessage.java"
+             target-dir="src/com/ibm/maximo/pushnotification" />
+		<source-file src="src/android/IMaximoPushMsgListener.java"
+             target-dir="src/com/ibm/maximo/pushnotification" />
+		<source-file src="src/android/MaximoGetData.java"
+             target-dir="src/com/ibm/maximo/pushnotification" />
+		<source-file src="src/android/MaximoPostData.java"
+             target-dir="src/com/ibm/maximo/pushnotification" />
+		<source-file src="src/android/MaximoPush.java"
+             target-dir="src/com/ibm/maximo/pushnotification" />
+		<source-file src="src/android/MaximoPushMessageImpl.java"
+             target-dir="src/com/ibm/maximo/pushnotification" /> 
+		<source-file src="src/android/MaximoUtil.java"
+             target-dir="src/com/ibm/maximo/pushnotification" />
+		<source-file src="src/android/MyFirebaseMessagingService.java"
+             target-dir="src/com/ibm/maximo/pushnotification" /> -->
+			 
+	   	<source-file src="gradle.properties"
+             target-dir="../../" />
+	    		 
+    </platform>
+ 
+
+    <platform name="ios">
+           
+        <dependency id="cordova-plugin-add-swift-support"/>
+                       
+        <hook src="hooks/after_prepare_ios.js" type="after_prepare" />
+        <config-file target="config.xml" parent="/*">
+            <feature name="PushNotification">
+                <param name="ios-package" value="PushNotification" />
+                <param name="onload" value="true" />
+            </feature>
+            <source-file src="src/ios/PushNotification.swift" />
+
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="UIBackgroundModes">
+            <array>
+                <string>fetch</string>
+                <string>remote-notification</string>
+            </array>
+        </config-file>
+        <config-file parent="FirebaseAppDelegateProxyEnabled" target="*-Info.plist">
+            <true />
+        </config-file>
+        <config-file parent="FirebaseMessagingAutoinitEnabled" target="*-Info.plist">
+            <true />
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+            <dict>
+                <key>NSAllowsArbitraryLoads</key>
+                <true />
+            </dict>
+        </config-file>
+
+        <config-file target="*-Debug.plist" parent="aps-environment">
+            <string>development</string>
+        </config-file>
+        <config-file target="*-Release.plist" parent="aps-environment">
+            <string>production</string>
+        </config-file>
+        
+        <header-file src="src/ios/PushNotification-Swift.h" />
+        <source-file src="src/ios/libs/libMaximoPushNotification.a" framework="true" />
+        <header-file src="src/ios/framework/Firebase.h" />
+        <source-file src="src/ios/Push.swift" />
+		
+		 <!--source-file src="src/ios/MaximoPushFCM.swift" />
+        <source-file src="src/ios/MaximoPushIPN.swift" />
+        <source-file src="src/ios/MaximoRestAPIData.swift" />
+        <source-file src="src/ios/PushNotification.swift" />
+        <source-file src="src/ios/AppDelegate.swift" /-->
+		
+
+        <framework src="src/ios/framework/BMSAnalyticsAPI.framework" custom="true" embed="true" />
+        <framework src="src/ios/framework/BMSCore.framework" custom="true" embed="true" />
+        <framework src="src/ios/framework/BMSPush.framework" custom="true" embed="true" />
+        <framework src="src/ios/framework/FirebaseCore.framework" custom="true" />
+        <framework src="src/ios/framework/FirebaseInstanceID.framework" custom="true" />
+        <framework src="src/ios/framework/FirebaseMessaging.framework" custom="true" />
+        <framework src="src/ios/framework/FIRAnalyticsConnector.framework" custom="true" />
+        <framework src="src/ios/framework/FirebaseAnalytics.framework" custom="true" />
+        <framework src="src/ios/framework/FirebaseCoreDiagnostics.framework" custom="true" />
+        <framework src="src/ios/framework/FirebaseInstallations.framework" custom="true" />
+        <framework src="src/ios/framework/GoogleAppMeasurement.framework" custom="true" />
+        <framework src="src/ios/framework/GoogleDataTransport.framework" custom="true" />
+        <framework src="src/ios/framework/GoogleDataTransportCCTSupport.framework" custom="true"/>
+        <framework src="src/ios/framework/GoogleUtilities.framework" custom="true" />
+        <framework src="src/ios/framework/PromisesObjC.framework" custom="true" />
+        <framework src="src/ios/framework/nanopb.framework" custom="true" />
+        <framework src="src/ios/framework/SwiftyJSON.framework" custom="true" embed="true" />
+        <framework src="src/ios/framework/protobuf.framework" custom="true" />
+
+        <framework src="libc++.tbd" />
+        <framework src="StoreKit.framework" />
+        <framework src="Security.framework" />
+        <framework src="libsqlite3.0.tbd" />    
+   </platform>
+
+</plugin>

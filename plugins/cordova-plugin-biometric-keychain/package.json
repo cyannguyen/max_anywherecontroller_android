@@ -1,0 +1,70 @@
+{
+  "_from": "cordova-plugin-biometric-keychain",
+  "_id": "cordova-plugin-biometric-keychain@0.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-+aDbejl6Ngh5X+8xjh2UCkIWnaUkgBKKxRo255uZ9zUYorloV8zjZyOQ6SaOhBcoJ6mu/nckjvDNWjfjqRabrw==",
+  "_location": "/cordova-plugin-biometric-keychain",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-biometric-keychain",
+    "name": "cordova-plugin-biometric-keychain",
+    "escapedName": "cordova-plugin-biometric-keychain",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-biometric-keychain/-/cordova-plugin-biometric-keychain-0.0.4.tgz",
+  "_shasum": "4aec48ff0c81d6ea07ecd30fca1231322d454fc2",
+  "_spec": "cordova-plugin-biometric-keychain",
+  "_where": "/Users/mohanc/Documents/keychain/keychainapp",
+  "author": {
+    "name": "S.Al-Bacha"
+  },
+  "bugs": {
+    "url": "https://github.com/SleimanB/PTeam-Keychain-Biometric.git/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-biometric-keychain",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Scan the fingerprint of your user with the TouchID or FaceID sensor (iPhone 5S, iPhone 6(S), ..) and control a key in the Keychain and detect if any TouchID or fingerprint is added or removed for security reason",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/SleimanB/PTeam-Keychain-Biometric.git#readme",
+  "keywords": [
+    "TouchID",
+    "Touch ID",
+    "Fingerprint",
+    "Biometric",
+    "Scanner",
+    "KeyChain",
+    "detect change",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "cordova-plugin-biometric-keychain",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SleimanB/PTeam-Keychain-Biometric.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.4"
+}

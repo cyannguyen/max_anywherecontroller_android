@@ -1,0 +1,14 @@
+android {
+	defaultConfig {
+		 multiDexEnabled true
+	}
+
+	packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:multidex:1.0.3'
+} 

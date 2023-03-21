@@ -1,0 +1,170 @@
+{
+  "cordova-background-geolocation-services": {
+    "version": "1.1.1",
+    "name": "CDVBackgroundLocationServices"
+  },
+  "cordova-plugin-advanced-http": {
+    "version": "3.1.0",
+    "name": "Advanced HTTP plugin"
+  },
+  "cordova-plugin-android-permissions": {
+    "version": "1.1.2",
+    "name": "Permissions"
+  },
+  "cordova-plugin-androidx": {
+    "version": "2.0.0",
+    "name": "cordova-plugin-androidx"
+  },
+  "cordova-plugin-androidx-adapter": {
+    "version": "1.1.3",
+    "name": "cordova-plugin-androidx-adapter"
+  },
+  "cordova-plugin-biometric-keychain": {
+    "version": "0.0.4",
+    "name": "Biometric and Keychain"
+  },
+  "cordova-plugin-buildinfo": {
+    "version": "2.0.3",
+    "name": "BuildInfo"
+  },
+  "cordova-plugin-camera": {
+    "version": "6.0.0",
+    "name": "Camera"
+  },
+  "cordova-plugin-cookies": {
+    "version": "0.0.1",
+    "name": "CookiesPlugin"
+  },
+  "cordova-plugin-device": {
+    "version": "2.0.2",
+    "name": "Device"
+  },
+  "cordova-plugin-dialogs": {
+    "version": "2.0.2",
+    "name": "Notification"
+  },
+  "cordova-plugin-file": {
+    "version": "6.0.1",
+    "name": "File"
+  },
+  "cordova-plugin-file-opener2": {
+    "version": "3.0.5",
+    "name": "File Opener2"
+  },
+  "cordova-plugin-file-transfer": {
+    "version": "1.7.1",
+    "name": "File Transfer"
+  },
+  "cordova-plugin-fingerprint-aio": {
+    "version": "4.0.2",
+    "name": "FingerprintAllInOne"
+  },
+  "cordova-plugin-geolocation": {
+    "version": "4.0.2",
+    "name": "Geolocation"
+  },
+  "cordova-plugin-globalization": {
+    "version": "1.11.0",
+    "name": "Globalization"
+  },
+  "cordova-plugin-inappbrowser": {
+    "version": "4.0.1-dev",
+    "name": "InAppBrowser"
+  },
+  "cordova-plugin-iroot": {
+    "version": "0.8.1",
+    "name": "iRoot"
+  },
+  "cordova-plugin-maximo-pushnotification": {
+    "version": "1.0.0",
+    "name": "MaximoPushNotification"
+  },
+  "cordova-plugin-media-capture": {
+    "version": "3.0.2",
+    "name": "Capture"
+  },
+  "cordova-plugin-mfp": {
+    "version": "8.0.2021020111",
+    "name": "IBM MobileFirst Platform Foundation"
+  },
+  "cordova-plugin-mfp-jsonstore": {
+    "version": "8.0.2021020111",
+    "name": "IBM MobileFirst Platform Foundation JSONStore"
+  },
+  "cordova-plugin-native-spinner": {
+    "version": "1.1.3",
+    "name": "Native Spinner"
+  },
+  "cordova-plugin-network-information": {
+    "version": "2.0.1",
+    "name": "Network Information"
+  },
+  "cordova-plugin-okhttp": {
+    "version": "2.0.0",
+    "name": "OkHttp"
+  },
+  "cordova-plugin-privacyscreen-fix": {
+    "version": "0.3.2",
+    "name": "PrivacyScreenPlugin"
+  },
+  "cordova-plugin-wkwebview-engine": {
+    "version": "1.2.1",
+    "name": "Cordova WKWebView Engine"
+  },
+  "cordova-plugin-wkwebviewxhrfix": {
+    "version": "0.1.0",
+    "name": "WKWebView XHR Fix"
+  },
+  "cordova-spatialite-storage": {
+    "version": "1.2.0",
+    "name": "Cordova sqlite/spatialite storage plugin"
+  },
+  "ibm-accessibility-plugin": {
+    "version": "0.0.1",
+    "name": "AccessibilityPlugin"
+  },
+  "ibm-device-orientation-plugin": {
+    "version": "0.0.1",
+    "name": "DeviceOrientationPlugin"
+  },
+  "ibm-display-manager-plugin": {
+    "version": "0.0.1",
+    "name": "DisplayManagerPlugin"
+  },
+  "ibm-logging-plugin": {
+    "version": "0.0.1",
+    "name": "LoggingPlugin"
+  },
+  "ibm-map-plugin": {
+    "version": "0.0.1",
+    "name": "MapPlugin"
+  },
+  "ibm-plugin-barcodescanner": {
+    "version": "0.1.0",
+    "name": "BarcodeScanner"
+  },
+  "ibm-plugin-cookiemanager": {
+    "version": "0.2.3",
+    "name": "CookieManager"
+  },
+  "ibm-plugin-devicekeyboard": {
+    "version": "0.1.0",
+    "name": "KeyboardPlugin"
+  },
+  "ibm-plugin-email": {
+    "version": "0.0.1",
+    "name": "EmailPlugin"
+  },
+  "ibm-plugin-filepath": {
+    "version": "0.1.0",
+    "name": "FilePath"
+  },
+  "ibm-plugin-permissions": {
+    "version": "0.1.0",
+    "name": "PermissionsPlugin"
+  },
+  "phonegap-plugin-contentsync": {
+    "version": "1.4.2",
+    "name": "content-sync"
+  }
+}

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="ibm-plugin-barcodescanner" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>BarcodeScanner</name>
+    <js-module name="BarcodeScanner" src="www/BarcodeScanner.js">
+        <clobbers target="cordova.plugins.BarcodeScanner"/>
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="CodeScanner">
+                <param name="ios-package" value="ISICodeScannerPlugin"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/ISICodeScannerPlugin.h"/>
+        
+        <resource-file src="src/ios/BarcodeAsset.bundle"/>
+    <source-file framework="true" src="src/ios/libBarcodeScanner.a"/>
+</platform>
+    <platform name="android">
+        <hook type="after_plugin_install" src="hooks/configure_barcode_intent.js"/>
+        <config-file parent="/resources" target="res/values/strings.xml">
+            <string name="push_notification_title">Work Execution</string>
+            <!-- <string name="error">Error</string>
+            <string name="close">Close</string>
+            <string name="cancel">Cancel</string> -->
+            <string name="worklightSettingsTitle">Worklight Settings</string>
+            <string name="summaryWLServerUrl">Change the server URL: http[s]://domain or IP address[:port][/context root]</string>
+            <string name="titleWLServerUrl">Server URL</string>
+            <string name="networkSettingsTitleWLServerUrl">Network Settings</string>
+            <string name="OKTitleWLServerUrl">OK</string>
+            <string name="titleInvalidWLServerUrl">Invalid URL</string>
+            <string name="errorInvalidWLServerUrl">%1$s is not a valid URL. Valid format is http[s]://domain or IP address[:port][/context root]</string>
+            <string name="serverAddress">Server Address</string>
+            <string name="changeServerAddress">Change server URL</string>
+            <!-- <string name="wlWebResourcesCategory">Web Resources</string> -->
+            <!-- <string name="wlAppIdTitle">App ID</string> -->
+            <!-- <string name="wlAppVersionTitle">App Version</string> -->
+            <!-- <string name="downloadingWebResourcesMessage">Downloading application resources (progress in kilobytes)</string> -->
+            <!-- <string name="directUpdateDownloadingMessage">Downloading application update (progress in kilobytes)</string> -->
+            <!-- <string name="kb">kb</string> -->
+            <string name="testResourcesChecksumErrorMessage">The application encountered an internal error. Please uninstall the application and then re-install it.</string>
+            <string name="button_back">Back</string>
+            <string name="button_cancel">Cancel</string>
+            <string name="button_done">Done</string>
+            <string name="button_ok">OK</string>
+            <string name="contents_contact">Contact info</string>
+            <string name="contents_email">Email address</string>
+            <string name="contents_location">Geographic coordinates</string>
+            <string name="contents_phone">Phone number</string>
+            <string name="contents_sms">SMS address</string>
+            <string name="contents_text">Plain text</string>
+            <string name="menu_encode_mecard">Use MECARD</string>
+            <string name="menu_encode_vcard">Use vCard</string>
+            <string name="menu_share">Share</string>
+            <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+            <string name="msg_default_format">Format</string>
+            <string name="msg_default_meta">Metadata</string>
+            <string name="msg_default_status">Place a barcode inside the rectangle to scan it.</string>
+            <string name="msg_default_time">Time</string>
+            <string name="msg_default_type">Type</string>
+            <string name="msg_encode_contents_failed">Could not encode a barcode from the data provided.</string>
+            <string name="msg_intent_failed">Sorry, the requested application could not be launched. The barcode contents may be invalid.</string>
+            <string name="msg_sure">Are you sure?</string>
+            <string name="msg_unmount_usb">Sorry, the SD card is not accessible.</string>
+            <string name="preferences_actions_title">When a barcode is found\u2026</string>
+            <string name="preferences_auto_focus_title">Use auto focus</string>
+            <string name="preferences_bulk_mode_summary">Scan and save many barcodes continuously</string>
+            <string name="preferences_bulk_mode_title">Bulk scan mode</string>
+            <string name="preferences_copy_to_clipboard_title">Copy to clipboard</string>
+            <string formatted="false" name="preferences_custom_product_search_summary">Substitutions: %s = contents, %f = format, %t = type</string>
+            <string name="preferences_custom_product_search_title">Custom search URL</string>
+            <string name="preferences_decode_1D_title">1D barcodes</string>
+            <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+            <string name="preferences_decode_QR_title">QR Codes</string>
+            <string name="preferences_device_bug_workarounds_title">Device Bug Workarounds</string>
+            <string name="preferences_disable_continuous_focus_summary">Use only standard focus mode</string>
+            <string name="preferences_disable_continuous_focus_title">No continuous focus</string>
+            <string name="preferences_disable_exposure_title">No exposure</string>
+            <string name="preferences_front_light_summary">Improves scanning in low light on some phones, but may cause glare. Does not work on all phones.</string>
+            <string name="preferences_front_light_title">Use front light</string>
+            <string name="preferences_front_light_auto">Automatic</string>
+            <string name="preferences_front_light_off">Off</string>
+            <string name="preferences_front_light_on">On</string>
+            <string name="preferences_general_title">General settings</string>
+            <string name="preferences_invert_scan_title">Invert scan</string>
+            <string name="preferences_invert_scan_summary">Scan for white barcodes on black background. Not available on some devices.</string>
+            <string name="preferences_name">Settings</string>
+            <string name="preferences_play_beep_title">Beep</string>
+            <string name="preferences_remember_duplicates_summary">Store multiple scans of the same barcode in History</string>
+            <string name="preferences_remember_duplicates_title">Remember duplicates</string>
+            <string name="preferences_result_title">Result settings</string>
+            <string name="preferences_scanning_title">When scanning for barcodes, decode\u2026</string>
+            <string name="preferences_search_country">Search country</string>
+            <string name="preferences_try_bsplus">Try Barcode Scanner+</string>
+            <string name="preferences_try_bsplus_summary">Enhanced with new features and interface</string>
+            <string name="preferences_supplemental_summary">Try to retrieve more information about the barcode contents</string>
+            <string name="preferences_supplemental_title">Retrieve more info</string>
+            <string name="preferences_vibrate_title">Vibrate</string>
+        </config-file>
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="CodeScanner">
+                <param name="android-package" value="com.ibm.tivoli.si.plugin.CodeScannerPlugin"/>
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.CAMERA"/>
+        </config-file>
+
+        
+
+        <config-file parent="/manifest/application" target="AndroidManifest.xml">
+             <!-- BARCODE_ACTIVITIES: START -->  
+            
+            <activity android:exported="false" android:name="com.google.zxing.client.android.encode.EncodeActivity" android:stateNotNeeded="true"> 
+                <intent-filter> 
+                    <action android:name="com.google.zxing.client.android.ENCODE"/>  
+                    <category android:name="android.intent.category.DEFAULT"/> 
+                </intent-filter>  
+                <!-- This allows us to handle the Share button in Contacts. -->  
+                <intent-filter> 
+                    <action android:name="android.intent.action.SEND"/>  
+                    <category android:name="android.intent.category.DEFAULT"/>  
+                    <data android:mimeType="text/x-vcard"/> 
+                </intent-filter>  
+                <!-- This allows us to handle sharing any plain text . -->  
+                <intent-filter> 
+                    <action android:name="android.intent.action.SEND"/>  
+                    <category android:name="android.intent.category.DEFAULT"/>  
+                    <data android:mimeType="text/plain"/> 
+                </intent-filter> 
+            </activity>  
+            <!-- BARCODE_ACTIVITIES: END -->  
+        
+
+        </config-file>
+
+        <framework src="build-extras.gradle" custom="true" type="gradleReference"/>
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        <source-file src="res/layout/capture.xml" target-dir="res/layout"/>
+        <source-file src="res/layout/encode.xml" target-dir="res/layout"/>
+        <source-file src="res/raw/beep.ogg" target-dir="res/raw"/>
+        <source-file src="res/values/arrays.xml" target-dir="res/values"/>
+        <source-file src="res/values/colors.xml" target-dir="res/values"/>
+        <source-file src="res/values/dimens.xml" target-dir="res/values"/>
+        <source-file src="res/values/ids.xml" target-dir="res/values"/>
+        <source-file src="res/xml/preferences.xml" target-dir="res/xml"/>
+    <lib-file custom="true" type="gradleReference" src="src/android/libs/BarcodeScanner.jar"/>
+</platform>
+    <platform name="windows">
+        <framework arch="x86" custom="true" src="src/windows/buildtarget/x86/ZXing.winmd" target="win" target-dir="win/x86"/>
+        <framework arch="x64" custom="true" src="src/windows/buildtarget/x64/ZXing.winmd" target="win" target-dir="win/x64"/>
+        <framework arch="ARM" custom="true" src="src/windows/buildtarget/ARM/ZXing.winmd" target="win" target-dir="win/ARM"/>
+
+        <framework arch="x86" custom="true" src="src/windows/buildtarget/x86/WinRTBarcodeReader.winmd" target="win" target-dir="win/x86"/>
+        <framework arch="x64" custom="true" src="src/windows/buildtarget/x64/WinRTBarcodeReader.winmd" target="win" target-dir="win/x64"/>
+        <framework arch="ARM" custom="true" src="src/windows/buildtarget/ARM/WinRTBarcodeReader.winmd" target="win" target-dir="win/ARM"/>
+
+        <!-- <framework arch="x86" custom="true" src="src/windows/buildtarget/x86/msvcr110.dll" target="win" target-dir="win/x86" />
+        <framework arch="x64" custom="true" src="src/windows/buildtarget/x64/msvcr110.dll" target="win" target-dir="win/x64" />
+        <framework arch="ARM" custom="true" src="src/windows/buildtarget/ARM/msvcr110.dll" target="win" target-dir="win/ARM" /> -->
+    </platform>
+</plugin>

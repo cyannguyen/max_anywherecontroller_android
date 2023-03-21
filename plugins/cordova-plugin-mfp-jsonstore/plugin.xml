@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Licensed Material - Property of IBM
+
+   © Copyright 2015, 2016 IBM Corp.
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-mfp-jsonstore"
+       version="8.0.2021020111">
+    <name>IBM MobileFirst Platform Foundation JSONStore</name>
+    <description>IBM MobileFirst Platform Foundation Cordova JSONStore Plugin</description>
+    <license>IBM</license>
+    <keywords>cordova,ibm,worklight,mobilefirst,mfp,jsonstore</keywords>
+    <issue>https://www.ibm.com/support</issue>
+
+    <engines>
+
+      <engine name="cordova-android" version="&gt;=6.1.2 &lt;10" />
+      <engine name="cordova-ios" version="&gt;=4.1.1 &lt;7" />
+      <engine name="cordova-windows" version="&gt;=4.3.2 &lt;8" />
+      <engine name="cordova-plugman" version="&gt;=6.1.1 &lt;11" />
+
+
+    </engines>
+    <hook type="before_prepare" src="hooks/bootstrap.js" />
+    <hook type="after_prepare" src="hooks/bootstrap.js" />
+
+
+
+    <dependency id="cordova-plugin-mfp" version="&gt;=8.0.0" />
+    <!-- <dependency id="cordova-plugin-mfp-encrypt-utils" version="&gt;=8.0.0" /> Uncomment when JSONStore hybrid is decoupled -->
+
+    <platform name="android">
+
+    <js-module src="bootstrap.js" name="jsonstore">
+       <runs/>
+    </js-module>
+    
+    <!-- <asset src="www/worklight/jsonstore.js" target="worklight/jsonstore.js" /> -->
+    <asset src="www/worklight/jsonstore.js" target="plugins/cordova-plugin-mfp-jsonstore/worklight/jsonstore.js" />
+
+    <!--<resource-file src="src/android/assets/icudt46l.zip" target="assets/icudt46l.zip" />-->
+
+    <resource-file src="src/android/assets/featurelibs/armeabi/libcrypto.so.zip" target="assets/featurelibs/armeabi/libcrypto.so.zip" />
+    <resource-file src="src/android/assets/featurelibs/armeabi-v7a/libcrypto.so.zip" target="assets/featurelibs/armeabi-v7a/libcrypto.so.zip" />
+    <resource-file src="src/android/assets/featurelibs/x86/libcrypto.so.zip" target="assets/featurelibs/x86/libcrypto.so.zip" />
+
+    <resource-file src="src/android/assets/featurelibs/arm64-v8a/libcrypto.so.zip" target="assets/featurelibs/arm64-v8a/libcrypto.so.zip" />
+    <resource-file src="src/android/assets/featurelibs/x86_64/libcrypto.so.zip" target="assets/featurelibs/x86_64/libcrypto.so.zip" />
+
+    <!--<resource-file src="src/android/libs/armeabi/libdatabase_sqlcipher.so" target="libs/armeabi/libdatabase_sqlcipher.so" />
+    <resource-file src="src/android/libs/armeabi-v7a/libdatabase_sqlcipher.so" target="libs/armeabi-v7a/libdatabase_sqlcipher.so" />
+    <resource-file src="src/android/libs/x86/libdatabase_sqlcipher.so" target="libs/x86/libdatabase_sqlcipher.so" />-->
+
+    <resource-file src="src/android/libs/armeabi/libopenssl_fips.so" target="libs/armeabi/libopenssl_fips.so" />
+    <resource-file src="src/android/libs/armeabi-v7a/libopenssl_fips.so" target="libs/armeabi-v7a/libopenssl_fips.so" />
+    <resource-file src="src/android/libs/x86/libopenssl_fips.so" target="libs/x86/libopenssl_fips.so" />
+    <resource-file src="src/android/libs/x86_64/libopenssl_fips.so" target="libs/x86_64/libopenssl_fips.so" />
+    <resource-file src="src/android/libs/arm64-v8a/libopenssl_fips.so" target="libs/arm64-v8a/libopenssl_fips.so" />
+
+    <resource-file src="src/android/libs/armeabi/libsqlcipher.so" target="libs/armeabi/libsqlcipher.so" />
+    <resource-file src="src/android/libs/armeabi-v7a/libsqlcipher.so" target="libs/armeabi-v7a/libsqlcipher.so" />
+    <resource-file src="src/android/libs/x86/libsqlcipher.so" target="libs/x86/libsqlcipher.so" />
+    
+    <resource-file src="src/android/libs/arm64-v8a/libsqlcipher.so" target="libs/arm64-v8a/libsqlcipher.so" />
+    <resource-file src="src/android/libs/x86_64/libsqlcipher.so" target="libs/x86_64/libsqlcipher.so" />
+
+    <resource-file src="src/android/libs/armeabi/libcrypto.so" target="libs/armeabi/libcrypto.so" />
+    <resource-file src="src/android/libs/armeabi-v7a/libcrypto.so" target="libs/armeabi-v7a/libcrypto.so" />
+    <resource-file src="src/android/libs/x86/libcrypto.so" target="libs/x86/libcrypto.so" />
+    
+    <resource-file src="src/android/libs/arm64-v8a/libcrypto.so" target="libs/arm64-v8a/libcrypto.so" />
+    <resource-file src="src/android/libs/x86_64/libcrypto.so" target="libs/x86_64/libcrypto.so" />
+
+
+    <resource-file src="src/android/libs/armeabi/libopenssl_fips.so" target="jniLibs/armeabi/libopenssl_fips.so" />
+    <resource-file src="src/android/libs/armeabi-v7a/libopenssl_fips.so" target="jniLibs/armeabi-v7a/libopenssl_fips.so" />
+    <resource-file src="src/android/libs/x86/libopenssl_fips.so" target="jniLibs/x86/libopenssl_fips.so" />
+     <resource-file src="src/android/libs/x86_64/libopenssl_fips.so" target="jniLibs/x86_64/libopenssl_fips.so" />
+    <resource-file src="src/android/libs/arm64-v8a/libopenssl_fips.so" target="jniLibs/arm64-v8a/libopenssl_fips.so" />
+
+    <resource-file src="src/android/libs/armeabi/libsqlcipher.so" target="jniLibs/armeabi/libsqlcipher.so" />
+    <resource-file src="src/android/libs/armeabi-v7a/libsqlcipher.so" target="jniLibs/armeabi-v7a/libsqlcipher.so" />
+    <resource-file src="src/android/libs/x86/libsqlcipher.so" target="jniLibs/x86/libsqlcipher.so" />
+
+
+     <resource-file src="src/android/libs/x86_64/libsqlcipher.so" target="jniLibs/x86_64/libsqlcipher.so" />
+    <resource-file src="src/android/libs/arm64-v8a/libsqlcipher.so" target="jniLibs/arm64-v8a/libsqlcipher.so" />
+
+    <resource-file src="src/android/libs/armeabi/libcrypto.so" target="jniLibs/armeabi/libcrypto.so" />
+    <resource-file src="src/android/libs/armeabi-v7a/libcrypto.so" target="jniLibs/armeabi-v7a/libcrypto.so" />
+    <resource-file src="src/android/libs/x86/libcrypto.so" target="jniLibs/x86/libcrypto.so" />
+
+
+     <resource-file src="src/android/libs/x86_64/libcrypto.so" target="jniLibs/x86_64/libcrypto.so" />
+    <resource-file src="src/android/libs/arm64-v8a/libcrypto.so" target="jniLibs/arm64-v8a/libcrypto.so" />
+
+    <!--<resource-file src="src/android/libs/armeabi/libstlport_shared.so" target="libs/armeabi/libstlport_shared.so" />
+    <resource-file src="src/android/libs/armeabi-v7a/libstlport_shared.so" target="libs/armeabi-v7a/libstlport_shared.so" />
+    <resource-file src="src/android/libs/x86/libstlport_shared.so" target="libs/x86/libstlport_shared.so" />-->
+
+<!--  remove commons-codec.jar and guava.jar jars in cordova-plugin-mfp-jsonstore as part of SPbD analysis https://github.ibm.com/MobileFirst/mfp-sdk-planning/issues/711  -->
+    <lib-file src="src/android/libs/jackson-core-asl.jar" />
+    <lib-file src="src/android/libs/jackson-mapper-asl.jar" />
+
+    <lib-file src="src/android/libs/sqlcipher.jar" />
+    <lib-file src="src/android/libs/ibmmobilefirstplatformfoundationjsonstore.jar" />
+   
+    <config-file target="config.xml" parent="/*">
+
+        <feature name="StoragePlugin">
+            <param name="android-package" value="com.worklight.androidgap.jsonstore.dispatchers.StoragePlugin" />
+        </feature>
+    </config-file>
+
+    </platform>
+
+    <platform name="ios">
+
+    <js-module src="bootstrap.js" name="jsonstore">
+       <runs/>
+    </js-module>
+
+    <asset src="www/worklight/jsonstore.js" target="plugins/cordova-plugin-mfp-jsonstore/worklight/jsonstore.js" />
+
+    <framework src="src/ios/Frameworks/IBMMobileFirstPlatformFoundationHybridJSONStore.framework" custom="true" />
+    <framework src="src/ios/Frameworks/SQLCipher.framework" custom="true" />
+
+    <config-file target="*-Debug.plist" parent="keychain-access-groups">
+        <array>
+            <string>$(AppIdentifierPrefix)$PACKAGE_NAME</string>
+        </array>
+    </config-file>
+
+    <config-file target="*-Release.plist" parent="keychain-access-groups">
+        <array>
+            <string>$(AppIdentifierPrefix)$PACKAGE_NAME</string>
+        </array>
+    </config-file>
+
+    </platform>
+
+    <platform name="windows">
+
+        <js-module src="bootstrap.js" name="jsonstore">
+            <runs/>
+        </js-module>
+
+        <asset src="www/worklight/jsonstore.js" target="plugins/cordova-plugin-mfp-jsonstore/worklight/jsonstore.js" />
+
+        <framework src="src/windows/shared/JSONStoreWin8.winmd" target="all" custom="true" />
+        <framework src="src/windows/shared/JSONStoreWin8Lib.dll" target="all" custom="true" />
+
+        <resource-file src="src/windows/buildtarget/x86/msvcr110.dll" device-target="win"  target="msvcr110.dll" custom="true" arch="x86" reference="true"/>
+        <resource-file src="src/windows/buildtarget/x64/msvcr110.dll" device-target="win"  target="msvcr110.dll" custom="true" arch="x64" reference="true" />
+        <resource-file src="src/windows/buildtarget/ARM/msvcr110.dll" device-target="win"  target="msvcr110.dll" custom="true" arch="ARM" reference="true" />
+
+        <resource-file src="src/windows/buildtarget/x86/sqlite3.dll" device-target="win"  target="sqlite3.dll" custom="true" arch="x86" reference="true" />
+        <resource-file src="src/windows/buildtarget/x64/sqlite3.dll" device-target="win"  target="sqlite3.dll" custom="true" arch="x64" reference="true" />
+        <resource-file src="src/windows/buildtarget/ARM/sqlite3.dll" device-target="win"  target="sqlite3.dll" custom="true" arch="ARM" reference="true" />
+        <resource-file src="src/windows/buildtarget/wp/x86/sqlite3.dll" device-target="phone"  target="sqlite3.dll" custom="true" arch="x86" reference="true" />
+        <resource-file src="src/windows/buildtarget/wp/ARM/sqlite3.dll" device-target="phone"  target="sqlite3.dll" custom="true" arch="ARM" reference="true" />
+    </platform>
+
+</plugin>

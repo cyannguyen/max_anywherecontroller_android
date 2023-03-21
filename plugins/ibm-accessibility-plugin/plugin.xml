@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="ibm-accessibility-plugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>AccessibilityPlugin</name>
+    <js-module name="ibm-accessibility-plugin" src="www/ibm-accessibility-plugin.js">
+        <clobbers target="cordova.plugins.ibm-accessibility-plugin"/>
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="AccessibilityPlugin">
+                <param name="ios-package" value="AccessibilityPlugin"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/AccessibilityPlugin.h"/>
+        
+    <source-file framework="true" src="src/ios/libAccessibilityPlugin.a"/>
+</platform>
+</plugin>

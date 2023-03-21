@@ -1,0 +1,17 @@
+{
+  "name": "ibm-plugin-cookiemanager",
+  "version": "0.1.0",
+  "cordova": {
+    "id": "ibm-plugin-cookiemanager",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

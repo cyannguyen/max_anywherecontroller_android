@@ -1,0 +1,90 @@
+{
+  "_from": "cordova-plugin-maximo-pushnotification",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-maximo-pushnotification",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-maximo-pushnotification",
+    "name": "cordova-plugin-maximo-pushnotification",
+    "escapedName": "cordova-plugin-maximo-pushnotification",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "",
+  "_shasum": "",
+  "_spec": "cordova-plugin-maximo-pushnotification",
+  "_where": "",
+  "author": "Sarika Budhiraja",
+  "cordova": {
+    "id": "cordova-plugin-maximo-pushnotification",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova plugin for Maximo Pushnotification",
+  "homepage": "",
+  "keywords": [
+    "cordova",
+    "firebase",
+    "push",
+    "fcm",
+    "messaging",
+    "cordova-android",
+	"cordova-ios"
+  ],
+  "license": "ISC",
+  "name": "cordova-plugin-maximo-pushnotification",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "scripts": {
+    "postversion": "git push && git push --tags",
+    "version": "replace -s 'version=\"(.+)(?=\">)' 'version=\"'$npm_package_version plugin.xml && git add plugin.xml"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "abbrev": "undefined1.1.1",
+    "accepts": "undefined1.3.7",
+    "ansi": "undefined0.3.1",
+    "android-versions": "undefined1.4.0",
+    "array-flatten": "undefined1.1.1",
+    "ansi-styles": "undefined3.2.1",
+    "balanced-match": "undefined1.0.0"
+  },
+  "devDependencies": {
+    "abbrev": "undefined1.1.1",
+    "android-versions": "undefined1.4.0",
+    "ansi": "undefined0.3.1",
+    "accepts": "undefined1.3.7",
+    "balanced-match": "undefined1.0.0",
+    "array-flatten": "undefined1.1.1",
+    "ansi-styles": "undefined3.2.1"
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=9.0.0"
+    },
+    {
+      "name": "cordova-android",
+      "version": ">=8.0.0"
+    },
+	{
+      "name": "cordova-ios",
+      "version": ">=5.0.0"
+    }
+	
+	
+  ]
+}

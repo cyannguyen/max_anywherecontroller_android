@@ -1,0 +1,17 @@
+{
+  "name": "ibm-filepath-plugin",
+  "version": "0.1.0",
+  "description": "",
+  "cordova": {
+    "id": "ibm-filepath-plugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}

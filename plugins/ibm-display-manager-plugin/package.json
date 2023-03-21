@@ -1,0 +1,19 @@
+{
+  "name": "ibm-display-manager-plugin",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "ibm-display-manager-plugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,17 @@
+{
+    "name": "ibm-logging-plugin",
+    "version": "0.0.1",
+    "description": "A logging plugin which save os logs buffer to filesystem and allows user to share them",
+    "cordova": {
+        "id": "ibm-logging-plugin",
+        "platforms": [
+            "ios"
+        ]
+    },
+    "keywords": [
+        "ecosystem:cordova",
+        "cordova-ios"
+    ],
+    "author": "abnair@us.ibm.com",
+    "license": "ISC"
+}
